@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "firebase": "^9.9.3"
+  },
+  "name": "revis-o_avaliza-o",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Esterzinha12/Revis-o_avaliza-o.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Esterzinha12/Revis-o_avaliza-o/issues"
+  },
+  "homepage": "https://github.com/Esterzinha12/Revis-o_avaliza-o#readme",
+  "description": ""
+}
