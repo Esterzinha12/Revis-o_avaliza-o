@@ -49,6 +49,9 @@ async function cadastrarLivro(dados = { titulo: "", qtdPaginas: 0, listaAutores:
 
         }
     }
+
+    const livro = await crud.save(nomeTabela, undefined, dados);
+    return livro;
 }
 async function verificarListaAutoresCadastrados(list = []) {
     let naoCadastrado = false;

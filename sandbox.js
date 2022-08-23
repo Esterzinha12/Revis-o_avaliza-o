@@ -49,7 +49,7 @@ async function execute(){
     const livro={
         titulo: "Harry Potter",
         qtdPaginas: 8,
-        listaAutores:["7fqU1oTdOVaA0CQUYMXF", "10"]
+        listaAutores:["7fqU1oTdOVaA0CQUYMXF", "8CkCfIMmokL4RdyJBWTD"]
     };
     const resultado = await livroHandller.cadastrarLivro(livro);
     console.log(resultado);
