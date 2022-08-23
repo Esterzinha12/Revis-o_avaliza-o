@@ -2,16 +2,18 @@ const crud = require("./crud");
 
 
 
+
+
 async function executar() {
         const dado = {
-            nome: "Eduarda B", idade: 18
+            nome: "Kenzo"
         };
         // const resultado = await crud.getById("usuario", "bD9ED28yQt4ETGi9mfSO");
         // const resultado = await crud.get("usuario");
         // const resultado = await crud.remove("usuario", "bD9ED28yQt4ETGi9mfSO");
-        // const resultado= await crud.save("usuario", undefined, dado);
+        const resultado= await crud.save("Autores", undefined, dado);
 
-        const resultado = await crud.getWithFilter("usuario", "idade", "!=", 23);
+        // const resultado = await crud.getWithFilter("Usuarios", "idade", "!=", 23);
         console.log(resultado);
         
         // console.log(resultado.filter(e => {
@@ -36,6 +38,21 @@ async function executar() {
         // }));
 }
 
-executar().catch(e => console.log("Meu e: ", e));
+// executar().catch(e => console.log("Meu e: ", e));
 
 
+const livroHandller=require("./api/livro/livro.handller");
+
+
+async function execute(){
+
+    const livro={
+        titulo: "Harry Potter",
+        qtdPaginas: 8,
+        listaAutores:["7fqU1oTdOVaA0CQUYMXF", "10"]
+    };
+    const resultado = await livroHandller.cadastrarLivro(livro);
+    console.log(resultado);
+}
+
+execute();
